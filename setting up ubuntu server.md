@@ -18,15 +18,15 @@ sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-availab
 sudo nano /etc/apache2/sites-available/[testing.com].conf
 
 .conf file example
-<Directory /var/www/[testing.com]>
+&lt;Directory /var/www/[testing.com]&gt;
     Require all granted
-</Directory>
-<VirtualHost *:80>
-  ServerName [testing.com]
-  ServerAlias www.[testing.com]
-  ServerAdmin webmaster@localhost
-  DocumentRoot /var/www/[testing.com]
-</VirtualHost>
+&lt;/Directory&gt;
+&lt;VirtualHost *:80&gt;
+    ServerName [testing.com]
+    ServerAlias www.[testing.com]
+    ServerAdmin webmaster@localhost
+    DocumentRoot /var/www/[testing.com]
+&lt;/VirtualHost&gt;
 
 <h2>Make the directory</h2>
 sudo mkdir -p /var/www/[testing.com]
