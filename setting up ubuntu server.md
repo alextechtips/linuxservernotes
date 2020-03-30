@@ -14,10 +14,10 @@ sudo nano /etc/hosts
 >ip.ip.ip.ip [testing.com] [www.testing.com]
 
 <h2>Edit Apache2 Virtual host file</h2>
-sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/[testing.com].conf
-sudo nano /etc/apache2/sites-available/[testing.com].conf
-
-.conf file example
+sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/[testing.com].conf<br>
+sudo nano /etc/apache2/sites-available/[testing.com].conf<br>
+<br>
+.conf file example<br>
 &lt;Directory /var/www/[testing.com]&gt;
     Require all granted
 &lt;/Directory&gt;
