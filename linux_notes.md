@@ -107,6 +107,8 @@ mysql> quit</code></pre>
 
 <pre><code>sudo mysql_secure_installation</code></pre>
 
+<h2>Install mySQL client phpmyadmin</h2>
+
 <pre><code>sudo apt-get update
 sudo apt-get install -y phpmyadmin</code></pre>
 
@@ -252,8 +254,10 @@ sudo /etc/init.d/mysql start
 </code></pre>
 <pre><code>sudo mysql -p -u root</code></pre>
 
-<h2>Install mySQL client phpmyadmin</h2>
+<h2>Install Indicator SysMonitor</h2>
+
 <pre><code>
-sudo apt-get update
-sudo apt-get install -y phpmyadmin
+sudo add-apt-repository ppa:fossfreedom/indicator-sysmonitor
+sudo apt update
+sudo apt install indicator-sysmonitor
 </code></pre>
