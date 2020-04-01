@@ -274,3 +274,6 @@ or PyPI the simple way
 <pre><code>
 sudo pip install glances
 </code></pre>
+
+neofetch
+cmatrix
