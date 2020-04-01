@@ -261,3 +261,16 @@ sudo add-apt-repository ppa:fossfreedom/indicator-sysmonitor
 sudo apt update
 sudo apt install indicator-sysmonitor
 </code></pre>
+
+<h2>Glances system monitor</h2>
+<pre><code>
+sudo curl -L https://bit.ly/glances | /bin/bash
+</code></pre>
+or
+<pre><code>
+sudo wget -O- https://bit.ly/glances | /bin/bash
+</code></pre>
+or PyPI the simple way
+<pre><code>
+sudo pip install glances
+</code></pre>
