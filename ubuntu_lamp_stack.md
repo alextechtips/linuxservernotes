@@ -108,9 +108,15 @@ replace salt secret
 sudo systemctl reload apache2</code></pre>
 
 <h2>Finally</h2>
+
 Insatll Theme
+
 + DIVI Theme - https://www.elegantthemes.com/affiliates/idevaffiliate.php?id=58138_1_1_5
+
 Install Plugins
+
 + FakerPress - install fake contents
+
 + UpdraftPlus - backup and restore
+
 + WP Data Access
