@@ -101,6 +101,7 @@ edit the file like below
 ```
 
 <h3>Enable the Changes in Apache</h3>
+
 ```
 $ sudo a2enmod ssl
 $ sudo a2enmod headers
