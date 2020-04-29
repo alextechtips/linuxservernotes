@@ -108,26 +108,31 @@ $ sudo a2enmod headers
 ```
 
 <h3>Enable our SSL Virtual Host with the a2ensite command</h3>
+
 ```
 $ sudo a2ensite default-ssl
 ```
 
 <h3>Enable ssl-params.conf</h3>
+
 ```
 $ sudo a2enconf ssl-params
 ```
 
 <h3>Check to make sure that there are no syntax errors in our files</h3>
+
 ```
 $ sudo apache2ctl configtest
 ```
 
 <h3>Restart apache</h3>
+
 ```
 $ sudo systemctl restart apache2
 ```
 
 <h3>Add redirect to .htaccess file</h3>
+
 ```
 # BEGIN rlrssslReallySimpleSSL rsssl_version[3.3.1]
 <IfModule mod_rewrite.c>
