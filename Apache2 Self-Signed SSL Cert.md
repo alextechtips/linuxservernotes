@@ -1,6 +1,6 @@
-#How To Create a Self-Signed SSL Certificate for Apache in Ubuntu
+<h1>How To Create a Self-Signed SSL Certificate for Apache in Ubuntu</h1>
 
-###Create the SSL Certificate
+<h3>Create the SSL Certificate</h3>
 
 ```
 $ sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/apache-selfsigned.key -out /etc/ssl/certs/apache-selfsigned.crt
@@ -20,13 +20,13 @@ Email Address []:info@testing.com
 
 ```
 
-###Create a strong Diffie-Hellman group
+<h3>Create a strong Diffie-Hellman group</h3>
 
 ```
 $ sudo openssl dhparam -out /etc/ssl/certs/dhparam.pem 2048
 ```
 
-###Configure Apache to Use SSL
+<h3>Configure Apache to Use SSL</h3>
 
 ```
 $ sudo touch /etc/apache2/conf-aviliable/ssl-params.conf
@@ -60,7 +60,7 @@ SSLStaplingCache "shmcb:logs/stapling-cache(150000)"
 SSLOpenSSLConfCmd DHParameters "/etc/ssl/certs/dhparam.pem"
 ```
 
-###Modify the Default Apache SSL Virtual Host File
+<h3>Modify the Default Apache SSL Virtual Host File</h3>
 
 ```
 $ sudo cp /etc/apache2/sites-available/default-ssl.conf /etc/apache2/sites-available/testing.com-ssl.conf
@@ -100,33 +100,33 @@ edit the file like below
 </IfModule>
 ```
 
-###Enable the Changes in Apache
+<h3>Enable the Changes in Apache</h3>
 ```
 $ sudo a2enmod ssl
 $ sudo a2enmod headers
 ```
 
-###Enable our SSL Virtual Host with the a2ensite command
+<h3>Enable our SSL Virtual Host with the a2ensite command</h3>
 ```
 $ sudo a2ensite default-ssl
 ```
 
-###Enable ssl-params.conf
+<h3>Enable ssl-params.conf</h3>
 ```
 $ sudo a2enconf ssl-params
 ```
 
-###Check to make sure that there are no syntax errors in our files
+<h3>Check to make sure that there are no syntax errors in our files</h3>
 ```
 $ sudo apache2ctl configtest
 ```
 
-###Restart apache
+<h3>Restart apache</h3>
 ```
 $ sudo systemctl restart apache2
 ```
 
-###Add redirect to .htaccess file
+<h3>Add redirect to .htaccess file</h3>
 ```
 # BEGIN rlrssslReallySimpleSSL rsssl_version[3.3.1]
 <IfModule mod_rewrite.c>
