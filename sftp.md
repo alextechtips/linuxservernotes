@@ -1,16 +1,16 @@
 sftp username@ip.ip.ip.ip
 -> enter password
 
-// ls - list directory
-// lls - list local directory
-// pwd - present working directory
-// lpwd - local present working directory
-// lcd - local change directory
-// get filename.ext - get file from remote
-// get -r foldername - get a directory from remote
-// put filename.ext - put file into remote directory
-// rm filename.ext - remove file
-// bye/exit - quit
+// ls - list directory<br>
+// lls - list local directory<br>
+// pwd - present working directory<br>
+// lpwd - local present working directory<br>
+// lcd - local change directory<br>
+// get filename.ext - get file from remote<br>
+// get -r foldername - get a directory from remote<br>
+// put filename.ext - put file into remote directory<br>
+// rm filename.ext - remove file<br>
+// bye/exit - quit<br>
 
 Mount USB drive on WLS
 sudo mkdir /mnt/e
